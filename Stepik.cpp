@@ -3,13 +3,18 @@
 int main() {
 	using namespace std;
 
-	int a = 0;
+	int min_age, new_age;
 
-	while (a<=100)
+	cin >> new_age;
+	min_age = new_age;
+	while (new_age != 0)
 	{
-		cout << a << endl;
-		a++;
+		if (min_age > new_age)
+		{
+			min_age = new_age;
+		}
+		cin >> new_age;
 	}
-
+	cout << min_age;
 	return 0;
 }
